@@ -8,7 +8,7 @@ namespace ConsoleApplication7
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var songs = new Song[]
             {
@@ -60,6 +60,8 @@ namespace ConsoleApplication7
                     }
                     break;
                 default:
+                    Console.WriteLine("unknown identifier");
+                    Main();
                     break;
             }
         }
