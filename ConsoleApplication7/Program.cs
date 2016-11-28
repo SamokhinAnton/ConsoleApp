@@ -28,7 +28,7 @@ namespace ConsoleApplication7
             switch (Console.ReadLine())
             {
                 case "c":
-                    Console.WriteLine("print index of the song, index may be from 0 to {0}. Then type new snong name", songs.Length);
+                    Console.WriteLine("print index of the song, index may be from 0 to {0}. Then type new snong name", songs.Length-1);
                     songs[int.Parse(Console.ReadLine())].Name = Console.ReadLine();
                     PrintAll(songs);
                     break;
